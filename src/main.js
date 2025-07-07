@@ -6,6 +6,7 @@ new Splide(".splide", {
   width: "300vw",
   height: "600px",
   perPage: 3,
+  perMove: 1,
 }).mount();
 
 //

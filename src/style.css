@@ -790,6 +790,17 @@ body {
 .section.mapped button.button.is-in-viewport {
   animation: slide-in-top 1s 1s both;
 }
+.splide__arrow--prev,
+.splide__arrow--next {
+  transition: 0.25s ease-in-out;
+  top: 55%;
+}
+.splide__arrow--prev {
+  left: 65vw;
+}
+.splide__arrow--next {
+  right: 65vw;
+}
 
 .animate {
   animation-timing-function: linear(
