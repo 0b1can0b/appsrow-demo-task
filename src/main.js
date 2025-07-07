@@ -3,8 +3,9 @@ import "./style.css";
 new Splide(".splide", {
   type: "loop",
   gap: "24px",
-  width: "1200px",
-  height: "490px",
+  width: "300vw",
+  height: "600px",
+  perPage: 3,
 }).mount();
 
 //
@@ -54,7 +55,7 @@ document.querySelector(".section.hero .arrow-down").addEventListener("click", ()
     const tabContents = [...document.querySelectorAll(".tab-content")];
     tabContents[index].classList.add("active");
 
-    document.querySelector(".tab-indicator-container").style.top = `${[8, 54, 100, 144, 190][index]}px`;
+    document.querySelector(".tab-indicator-container").style.top = `${[8, 46, 84, 120, 158][index]}px`;
   })
 );
 

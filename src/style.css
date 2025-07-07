@@ -442,7 +442,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 8px;
   position: relative;
 }
 .section.properties .tab-title-container {
@@ -524,7 +524,7 @@ body {
 }
 .section.properties > .bottom {
   padding-inline: var(--section-padding-inline);
-  margin-top: 38px;
+  margin-top: 24px;
   min-height: 450px;
 }
 .section.properties .tab-content {
@@ -544,7 +544,7 @@ body {
 }
 .section.properties .tab-content img.property-img {
   width: 100%;
-  max-height: 450px;
+  max-height: 400px;
   object-fit: cover;
   object-position: 0 25%;
 }
@@ -757,6 +757,7 @@ body {
   z-index: -2;
 }
 .section.mapped .heading-container {
+  overflow: hidden;
 }
 .section.mapped h2.heading {
   font-weight: 400;
@@ -765,7 +766,10 @@ body {
   letter-spacing: -1.9px;
   color: #ffffff;
 }
-.section.mapped button.button-container {
+.section.mapped h2.heading.is-in-viewport {
+  animation: slide-in-bottom 1s 0.5s both;
+}
+.section.mapped .button-container {
   overflow: hidden;
 }
 .section.mapped button.button {
@@ -783,9 +787,9 @@ body {
   box-shadow: 0 5px 25px -10px #0008;
   scale: 1.1;
 }
-/* .section.mapped button.button.is-in-viewport {
-  animation: slide-in-bottom 1s 3.5s both;
-} */
+.section.mapped button.button.is-in-viewport {
+  animation: slide-in-top 1s 1s both;
+}
 
 .animate {
   animation-timing-function: linear(
